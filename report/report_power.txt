@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : CNN
+Version: O-2018.06-SP5-2
+Date   : Sun Jun 20 21:42:31 2021
+****************************************
+
+
+Library(s) Used:
+
+    ih55lp_hs_rvt_tt_1p20_25c_basic (File: /home/tools/PDK/55lp_pdk_std_io/IH55LP_HS_V2p5b_basic_20190730/IH55LP_HS_V2p5b_basic/IH55LP_HS_RVT_V2p5b/synopsys/ih55lp_hs_rvt_tt_1p20_25c_basic.db)
+
+
+Operating Conditions: TT   Library: ih55lp_hs_rvt_tt_1p20_25c_basic
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1uW
+
+
+  Cell Internal Power  =   2.2028 mW   (92%)
+  Net Switching Power  = 185.9629 uW    (8%)
+                         ---------
+Total Dynamic Power    =   2.3887 mW  (100%)
+
+Cell Leakage Power     =   4.4540 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           2.0476        2.0237e-02            1.9398            2.0698  (  86.49%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.1551            0.1657            2.5142            0.3234  (  13.51%)
+--------------------------------------------------------------------------------------------------
+Total              2.2028 mW         0.1860 mW         4.4540 uW         2.3932 mW
+1

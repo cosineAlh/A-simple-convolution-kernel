@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : CNN
+Version: O-2018.06-SP5-2
+Date   : Sun Jun 20 21:42:21 2021
+****************************************
+
+Library(s) Used:
+
+    ih55lp_hs_rvt_tt_1p20_25c_basic (File: /home/tools/PDK/55lp_pdk_std_io/IH55LP_HS_V2p5b_basic_20190730/IH55LP_HS_V2p5b_basic/IH55LP_HS_RVT_V2p5b/synopsys/ih55lp_hs_rvt_tt_1p20_25c_basic.db)
+
+Number of ports:                          794
+Number of nets:                         13119
+Number of cells:                        12088
+Number of combinational cells:          10299
+Number of sequential cells:              1781
+Number of macros/black boxes:               0
+Number of buf/inv:                       1990
+Number of references:                     107
+
+Combinational area:              25880.760346
+Buf/Inv area:                     2152.800085
+Noncombinational area:           14746.679524
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 40627.439870
+Total area:                 undefined
+1

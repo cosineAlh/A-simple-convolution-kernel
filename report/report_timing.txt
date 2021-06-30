@@ -1,0 +1,88 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CNN
+Version: O-2018.06-SP5-2
+Date   : Sun Jun 20 21:42:05 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TT   Library: ih55lp_hs_rvt_tt_1p20_25c_basic
+Wire Load Model Mode: top
+
+  Startpoint: I_ram_dout[53]
+              (input port clocked by clk)
+  Endpoint: genblk1[4].PE_inst/S_out_reg[24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    5.00       5.00 f
+  I_ram_dout[53] (in)                                     0.00       5.00 f
+  U14373/ZN (HSR_AOI22_0)                                 0.07       5.07 r
+  U14374/ZN (HSR_OAI22_0)                                 0.06       5.12 f
+  U14375/ZN (HSR_NOR2_0)                                  0.11       5.23 r
+  U9922/ZN (HSR_IN_0)                                     0.04       5.27 f
+  U10309/ZN (HSR_AOI22_0)                                 0.06       5.33 r
+  U9242/ZN (HSR_IOA21_1)                                  0.05       5.37 r
+  U9695/ZN (HSR_OAI211_0)                                 0.05       5.43 f
+  U9694/ZN (HSR_AOI22_0)                                  0.06       5.49 r
+  U9693/ZN (HSR_OAI211_0)                                 0.07       5.56 f
+  genblk1[4].PE_inst/X_in[5] (PE_3)                       0.00       5.56 f
+  genblk1[4].PE_inst/U19/ZN (HSR_IN_2)                    0.11       5.66 r
+  genblk1[4].PE_inst/U3/ZN (HSR_IN_2)                     0.06       5.73 f
+  genblk1[4].PE_inst/U112/ZN (HSR_AOI33_0)                0.19       5.92 r
+  genblk1[4].PE_inst/U165/ZN (HSR_OAI32_0)                0.11       6.03 f
+  genblk1[4].PE_inst/U37/S (HSR_AD1_1)                    0.17       6.20 f
+  genblk1[4].PE_inst/U71/S (HSR_AD1_1)                    0.07       6.27 f
+  genblk1[4].PE_inst/U84/CO (HSR_AD1_1)                   0.16       6.43 f
+  genblk1[4].PE_inst/U184/ZN (HSR_IOA21_0)                0.03       6.46 r
+  genblk1[4].PE_inst/U130/ZN (HSR_INAND2_0)               0.04       6.50 f
+  genblk1[4].PE_inst/U129/CO (HSR_AD1_1)                  0.09       6.59 f
+  genblk1[4].PE_inst/U134/ZN (HSR_AOI22_0)                0.05       6.64 r
+  genblk1[4].PE_inst/U133/ZN (HSR_IN_0)                   0.04       6.68 f
+  genblk1[4].PE_inst/U132/CO (HSR_AD1_1)                  0.09       6.77 f
+  genblk1[4].PE_inst/U82/ZN (HSR_INAND2_0)                0.03       6.80 r
+  genblk1[4].PE_inst/U81/ZN (HSR_INAND2_0)                0.04       6.84 f
+  genblk1[4].PE_inst/U80/CO (HSR_AD1_1)                   0.09       6.93 f
+  genblk1[4].PE_inst/U190/ZN (HSR_IOA21_0)                0.03       6.96 r
+  genblk1[4].PE_inst/U136/ZN (HSR_INAND2_0)               0.04       7.00 f
+  genblk1[4].PE_inst/U135/CO (HSR_AD1_1)                  0.09       7.09 f
+  genblk1[4].PE_inst/U193/ZN (HSR_IOA21_0)                0.03       7.12 r
+  genblk1[4].PE_inst/U139/ZN (HSR_INAND2_0)               0.04       7.16 f
+  genblk1[4].PE_inst/U137/CO (HSR_AD1_1)                  0.09       7.25 f
+  genblk1[4].PE_inst/U141/CO (HSR_AD1_1)                  0.09       7.33 f
+  genblk1[4].PE_inst/U85/CO (HSR_AD1_1)                   0.09       7.42 f
+  genblk1[4].PE_inst/U78/ZN (HSR_INAND2_0)                0.03       7.45 r
+  genblk1[4].PE_inst/U145/ZN (HSR_INAND2_0)               0.04       7.49 f
+  genblk1[4].PE_inst/U143/CO (HSR_AD1_1)                  0.09       7.58 f
+  genblk1[4].PE_inst/U146/CO (HSR_AD1_1)                  0.09       7.66 f
+  genblk1[4].PE_inst/U88/ZN (HSR_INAND2_0)                0.03       7.70 r
+  genblk1[4].PE_inst/U200/ZN (HSR_IOA21_0)                0.04       7.74 f
+  genblk1[4].PE_inst/U87/CO (HSR_AD1_1)                   0.09       7.82 f
+  genblk1[4].PE_inst/U148/ZN (HSR_AOI22_0)                0.07       7.90 r
+  genblk1[4].PE_inst/U202/Z (HSR_XOR3_1)                  0.06       7.96 f
+  genblk1[4].PE_inst/S_out_reg[24]/D (HSR_DQ_0)           0.00       7.96 f
+  data arrival time                                                  7.96
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  genblk1[4].PE_inst/S_out_reg[24]/CK (HSR_DQ_0)          0.00       8.00 r
+  library setup time                                     -0.04       7.96
+  data required time                                                 7.96
+  --------------------------------------------------------------------------
+  data required time                                                 7.96
+  data arrival time                                                 -7.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
